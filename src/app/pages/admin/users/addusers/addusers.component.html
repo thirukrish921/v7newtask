@@ -1,0 +1,34 @@
+
+<form  #userForm>
+    <br>
+    &nbsp;<h2>Add User</h2>
+  
+    <div class="form-group">
+        <input type="text" class="form-control" name="username" #username placeholder="User Name" required="required">
+   	
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" name="email" #email placeholder="Email" required="required">
+    </div>
+    <div class="form-group">
+        <input type="password" (input)="passwordHandler()" class="form-control" name="password" #password placeholder="Password" required="required">
+    </div>
+    <div class="form-group">
+        <input type="password" (input)="passwordHandler()" class="form-control"  name="confirmpassword"  #confirmpassword placeholder="Confirm Password" required="required">
+    </div>        
+    <div #userResponse class="text-danger text-center mb-2"></div>
+   &nbsp; <div class="form-group">
+        <div class="row">
+            <div class="Col">
+
+                <button type="submit" name="registerSubmit" #userSubmit class="btn btn-success btn-lg btn-block">Add User</button>
+
+            </div>
+            
+
+        </div>
+
+      
+  
+    </div>
+</form>

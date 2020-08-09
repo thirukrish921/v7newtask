@@ -1,0 +1,14 @@
+<form #loginForm>
+    <h2>Login</h2>
+    
+    <div class="form-group">
+        <input type="email" class="form-control" name="email" #loginEmailId placeholder="Email" required="required">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" #loginPassword required="required">
+    </div>
+    <div #loginResponse class="text-danger text-center mb-2"></div>
+    <div class="form-group">
+        <button type="submit" id="loginSubmit" name="loginSubmit" class="btn btn-success btn-lg btn-block">Sign In</button>
+    </div>
+</form>
